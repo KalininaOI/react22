@@ -5,43 +5,43 @@ import style from './ItemsList.module.scss';
 const ItemsMock = [
   {
     id: 1,
-    itemName: 'Ботинки',
+    itemName: 'ботинки',
     itemDescription: 'Смотрите, какие потрясающие ботинки',
-    price: 70000,
-  },
-  {
-    id: 2,
-    itemName: 'Шапка',
-    itemDescription: 'Очень красивая шапка',
     price: 1000,
   },
   {
+    id: 2,
+    itemName: 'шапка',
+    itemDescription: 'очень красивая шапка',
+    price: 100,
+  },
+  {
     id: 3,
-    itemName: 'Платье',
-    itemDescription: 'Лучшее платье на свете',
-    price: 20000,
+    itemName: 'платье',
+    itemDescription: 'лучшее платье на свете',
+    price: 5000,
   },
   {
     id: 4,
-    itemName: 'Пиджак',
-    itemDescription: 'Ну очень модный пиджак',
-    price: 5000,
+    itemName: 'пиджак',
+    itemDescription: 'ну очень модный пиджак',
+    price: 4000,
   },
 ];
 
 const ItemsList = () => {
   return (
     <div className={style.items_list__wrapper}>
-      <p>Список товаров:</p>
+      <p>Cписок товаров</p>
       <div className={style.items_list}>
         {ItemsMock.map((item) => {
           const { id, itemName, itemDescription } = item;
           return <Item key={`ID: ${id}`} name={itemName} description={itemDescription} />;
         })}
-        {/* <Item name={ItemsMock.itemName} description={ItemsMock.itemDescription} />
-        <Item name="Шапка" description="Очень красивая шапка" />
-        <Item name={ItemsMock.itemName} description={ItemsMock.itemDescription} />
-        <Item name={ItemsMock.itemName} description={ItemsMock.itemDescription} /> */}
+        {/* <Item name={ItemsNock.itemName} description={ItemsNock.itemDescription} />
+        <Item name={ItemsNock.itemName} description={ItemsNock.itemDescription} />
+        <Item name={ItemsNock.itemName} description={ItemsNock.itemDescription} />
+        <Item name={ItemsNock.itemName} description={ItemsNock.itemDescription} /> */}
       </div>
     </div>
   );
