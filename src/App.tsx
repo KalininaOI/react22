@@ -1,9 +1,9 @@
 import React from 'react';
 import './assets/scss/normalize.scss';
-import MainPage from './components/MainPage';
+import PageLayout from './layouts/PageLayout';
 
 const App = () => {
-  return <MainPage />;
+  return <div />;
 };
 
 export default App;
