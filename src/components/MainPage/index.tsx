@@ -1,12 +1,16 @@
 import React from 'react';
-import MainLayout from '../../shared/layouts/MainLayout';
+import Footer from '../Footer';
+import Header from '../Header';
 import ItemsList from '../ItemsList';
+import style from './MainPage.module.scss';
 
 const MainPage = () => {
   return (
-    <MainLayout>
+    <div className={style.page_wrapper}>
+      <Header />
       <ItemsList />
-    </MainLayout>
+      <Footer />
+    </div>
   );
 };
 
