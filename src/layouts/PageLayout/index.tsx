@@ -22,5 +22,3 @@ const PageLayout: FC<IPageLayout> = ({ children }) => {
 };
 
 export default PageLayout;
-
-// в функцональных компонентах мы имитируем жизненный цикл компонента

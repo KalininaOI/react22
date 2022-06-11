@@ -2,44 +2,41 @@ import React, { useEffect, useMemo, useState } from 'react';
 
 const TestPageComponent = () => {
   const [counter, setCount] = useState(0);
-
   const [someArray, setSomeArray] = useState([1, 2, 3]);
 
   const updatedArray = useMemo(() => {
     return someArray.map((num) => {
-      console.log('Hello');
-      return num;
+      console.log('hello');
+      return num + 10;
     });
   }, [someArray]);
 
-  // componenntWillMount
+  // componentDidMount
   useEffect(() => {
-    console.log('компонент отображен');
+    console.log('Компонент отображен');
   }, []);
 
   // componentDidUpdate
-  // useEffect(() => {
-  //   console.log('компонент обновлен');
-  // });
+  //   useEffect(() => {
+  //     console.log('Компонент обновлен');
+  //   });
 
-  // useEffect(() => {
-  //   console.log('counter обновлен');
-  // }, [counter]);
+  //   useEffect(() => {
+  //     console.log('COUNTER обновлен');
+  //   }, [counter]);
 
-  // useEffect(() => {
-  //   console.log('Some_Array обновлен');
-  // }, [someArray]);
-  // с скобкаx то, за чем следит. если нет скобок - следит за всем
+  //   useEffect(() => {
+  //     console.log('SOME_ARRAY обновлен');
+  //   }, [someArray]);
 
-  // useEffect(() => {
-  //   console.log('counter OR Some_Array обновлен');
-  // }, [counter, someArray]);
+  //   useEffect(() => {
+  //     console.log('COUNTER ИЛИ SOME_ARRAY обновлен');
+  //   }, [counter, someArray]);
 
-  // component WillUnmount
-
+  // componentWillUnmount
   useEffect(() => {
     return () => {
-      console.log('компонент удален');
+      console.log('Компонент был удален');
     };
   }, []);
 
@@ -47,7 +44,7 @@ const TestPageComponent = () => {
     <div>
       <p>{counter}</p>
       <button type="button" onClick={() => setCount((prev) => prev + 1)}>
-        Увеличиь counter
+        Увеличить counter
       </button>
       <hr />
       <button type="button" onClick={() => setSomeArray((prev) => [...prev, prev.length + 1])}>
