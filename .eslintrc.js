@@ -30,6 +30,9 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 'warn',
     'linebreak-style': 'off',
     'react/function-component-definition': 'off',
+    'default-param-last': 'off',
+'@typescript-eslint/default-param-last': 'off',
+ 'react-hooks/exhaustive-deps': 'warn',
     'prettier/prettier': [
       'error',
       {
