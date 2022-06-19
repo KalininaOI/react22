@@ -9,4 +9,9 @@ export const sidebarConfig = [
     name: 'Тестовая страница',
     path: '/test_page',
   },
+  {
+    id: 3,
+    name: 'Список задач',
+    path: '/todos_page',
+  },
 ];
