@@ -14,4 +14,24 @@ export const sidebarConfig = [
     name: 'Список задач',
     path: '/todos_page',
   },
+  {
+    id: 4,
+    name: 'UseRef',
+    path: '/use_ref',
+  },
+  {
+    id: 5,
+    name: 'UseCallBack',
+    path: '/use_callBack',
+  },
+  {
+    id: 6,
+    name: 'Use Memo',
+    path: '/use_memo',
+  },
+  {
+    id: 7,
+    name: 'Use Context',
+    path: '/use_context',
+  },
 ];
